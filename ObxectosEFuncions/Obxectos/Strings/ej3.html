@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Crea unha función á que se lle pase unha cadea de números e devolva unha cadea
+      // da mesma lonxitude formada por * e as últimas 4 cifras do parámetro de entrada.
+
+      let cadea = "1234123412345555";
+
+      function hideString(str) {
+        let cadeaMenosUltimosCatro =
+          str.slice(0, -4).replaceAll(/[0-9]/g, "*") + cadea.slice(-4);
+        console.log(cadeaMenosUltimosCatro);
+      }
+      hideString(cadea);
+    </script>
+  </body>
+</html>
